@@ -1,0 +1,104 @@
+*{
+    font-style: italic;
+    font-weight: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card{
+    width:fit-content;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    /* position: fixed; */
+}
+.card_info{
+    padding:10px;
+    font-weight: 500;
+}
+.images{
+    display: inline-block;
+    padding: 10px;
+}
+
+body{
+    margin: 0px;
+    font-style:italic;
+}
+
+header{
+    padding: 30px;
+    color:black;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.box{
+    border-style: groove;
+    background-color: rgb(242, 233, 233);
+    color:#333;
+    padding:14px 75px;
+    margin:20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: left
+}
+
+input[type = "text"],input[type = "email"],
+input[type = "number"],
+input[type = "password"],
+input[type = "date"],
+input[type = "tel"],
+select,textarea{
+    width:95%;
+    padding: 12px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button[type="submit"]{
+    background-color: royalblue;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    border:none;
+    width: 35%;
+}
+
+button[type = "submit"]:hover{
+    background-color: skyblue;
+}
+
+button[type="reset"]{
+    background-color: royalblue;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    border:none;
+    width: 35%;
+}
+
+button[type = "reset"]:hover{
+    background-color: skyblue;
+}
+
+h2{
+    font-size: 30px;
+    padding: 25px;
+}
+form{
+    font-weight: 500;
+}
+
+@media screen and (max-width: 800px){
+    .box{
+        text-align: center;
+    }
+}
+
+textarea{
+    resize: none;
+}
