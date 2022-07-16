@@ -13,39 +13,53 @@
      <!-- External css -->
      <link rel="stylesheet" href="css 2 main web page.css">
     
+     <link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon\favicon-16x16.png">
+    <link rel="manifest" href="favicon\site.webmanifest">
 </head>
 <body>
-    <center>
-        <h1>Restaurant Management Website</h1>
-    </center>
     
-    <div id = "back">
-        <marquee behavior="scroll" direction="left">Welcome to our restaurant's web interface</marquee>    
+     <!-- Nav bar  -->
+     <div class="navbar">
+        <a href = "Main Page.html">Home</a>
+        <a href = "North_Indian_Dishes.html">North Indian Dishes</a>
+        <a href = "South_Indian_Dishes.html">South Indian Dishes</a>
+        <a href = "Chinese cuisine.html">Chinese Cuisine</a>
+        <a href = "Reservation Page.html"> Reservations    </a>
+        <a href = "Review & Feedback.html">Reviews & Feedbacks</a>
+        </div>
+        
+    <!-- For introducing new varieties of desserts -->
+    <div class="slide">
+        <marquee behavior="scroll" direction="left">
+            Welcome To Our Restaurant's Web Interface
+        </marquee>
     </div>
     
-    
+    <div class="main">
     <!--1st Section about Navigation bar  -->
-    <section>
+    <!-- <section>
         <center>
         <nav>
             <ul>
-                <li><a href ="#">   TACOS       </a></li>
-                <li><a href="#">    BEERS       </a></li>
-                <li><a href="#">    WINES       </a></li>
-                <li><a href="#">    DESSERTS    </a></li>
-                <LI><a href="Reservation Page.html">    RESERVATIONS    </a></LI>
-                <li><a href="Review & Feedback.html">    REVIEW & FEEDBACK    </a></li>
+                <li><a href ="North_Indian_Dishes.html">   North Indian    </a></li>
+                <li><a href="South_Indian_Dishes.html">    South Indian    </a></li>
+                <li><a href="Wines.html">    Wines           </a></li>
+                <li><a href="Desserts.html">    Desserts        </a></li>
+                <LI><a href="Reservation Page.html">    Reservations    </a></LI>
+                <li><a href="Review & Feedback.html">    Reviews & Feedback    </a></li>
             </ul>
         </nav>
     </center>
-    </section>
+    </section> -->
 
     <!-- 2nd Section About Differet Pictures -->
     <section>
         <CENTER>
        <h2> <b> <u>Famous Dishes</u>  </b>   </h2>
        <!-- Flickity HTML init -->
-        <div class="carousel" data-flickity='{"wrapAround": true}'>
+        <div class="carousel" data-flickity='{"wrapAround": true,"autoPlay":true}'>
          <div class="container"><img src="https://unsplash.com/photos/qDaSDiuc8bU/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU2MzMxNTc4&force=true&w=1920" width="450px" height="350px"></div>
          <div class="container"><img src="https://unsplash.com/photos/o5XB6XwTb1I/download?force=true&w=1920" width="450px" height="350px" ></div>
          <div class="container"><img src="https://unsplash.com/photos/wClFKcjhNcI/download?ixid=MnwxMjA3fDB8MXxjb2xsZWN0aW9ufDN8NTUzMTQ3MDZ8fHx8fDJ8fDE2NTYzMzE2NTE&force=true&w=1920" width="450px" height="350px"  ></div>
@@ -67,52 +81,51 @@
             <div class = "column">
                 <div id = "card">
                     <img src="https://unsplash.com/photos/POFG828-GQc/download?ixid=MnwxMjA3fDB8MXxjb2xsZWN0aW9ufDJ8NzA4MDgwMzl8fHx8fDJ8fDE2NTYzMzQyNDg&force=true&w=640" alt="NIC" height="70px" width="78px">
-                    <h3>NORTH INDIAN CUISINE</h3>
+                    <h3><u>NORTH INDIAN CUISINE</u></h3>
                     <p>
                         North Indian curries usually have thick, moderately spicy and creamy gravies. <br>
                         The use of dried fruits and nuts is fairly common even in everyday foods. 
                     </p>
-               
             </div>
         </div>
-            
+        <!--cCard 2  -->
         <div class = "row">
             <div class = "column">
                 <div id = "card">
                     <img src="https://unsplash.com/photos/gFB1IPmH6RE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8c291dGglMjBpbmRpYW4lMjBmb29kfGVufDB8fHx8MTY1NjMyNDI5NA&force=true&w=640" alt="NIF" height="70px" width="78px">
-                    <h3>SOUTH INDIAN CUISINE</h3>
+                    <h3><u>SOUTH INDIAN CUISINE </u></h3>
                     <p>
                         By and large, South Indian cuisine is perhaps the hottest of all Indian food. 
                         Meals are centered around rice or rice-based dishes. Rice is combined with Sambaar
                         and rasam, dry and curried vegetables.
                     </p>
-               
             </div>
-        </div>   
+        </div> 
+        <!-- Card 3 -->
         <div class = "row">
             <div class = "column">
                 <div id = "card">
                     <img src="https://unsplash.com/photos/wEBg_pYtynw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8N3x8Y2hpbmVzZSUyMGZvb2R8ZW58MHx8fHwxNjU2MzA5ODEy&force=true&w=640" alt="CC" height="70px" width="78px">
-                    <h3>CHINESE CUISINE</h3>
+                    <h3><u>CHINESE CUISINE</u></h3>
                     <p>
                         Chinese cuisine is an important part of Chinese culture and includes cuisines originating from China.Because of the Chinese diaspora and historical power of the country,
                         Chinese cuisine has influenced many other cuisines in Asia. 
                     </p>
-               
             </div>
         </div>
-
-        <!-- <div class = "row">
+        <!--Card 4 -->
+        <div class = "row">
             <div class = "column">
                 <div id = "card">
-                    <img src="https://unsplash.com/photos/wEBg_pYtynw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8N3x8Y2hpbmVzZSUyMGZvb2R8ZW58MHx8fHwxNjU2MzA5ODEy&force=true&w=640" alt="CC" height="70px" width="78px">
-                    <h3>ITALIAN CUISINE</h3>
+                    <img src="https://unsplash.com/photos/gFB1IPmH6RE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8c291dGglMjBpbmRpYW4lMjBmb29kfGVufDB8fHx8MTY1NjMyNDI5NA&force=true&w=640" alt="NIF" height="70px" width="78px">
+                    <h3><u>DESSERTS</u></h3>
                     <p>
-                         
+                        By and large, South Indian cuisine is perhaps the hottest of all Indian food. 
+                        Meals are centered around rice or rice-based dishes. Rice is combined with Sambaar
+                        and rasam, dry and curried vegetables.
                     </p>
-               
             </div>
-        </div> -->
+        </div>  
     </center> 
     </section>
     
@@ -122,7 +135,8 @@
         <div class = "row">
             <div class = "column">
                     <div class = "left_block">
-                        <b>Location:<br></b>
+                        <h3>
+                        <b>Location:<br></b></h3>
                         <p id = "card1">
                             Near New Roadways Bus Stand,<br>
                             Main Sumerpur Road,<br> 
@@ -134,12 +148,21 @@
         
         <div class = "right_block">
             <p>
-              <b> Get Directions Using Map:<br></b>
+              <b><h3>Get Directions Using Map:<br></b></h3> 
                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.323183007439!2d73.32143561502082!3d25.75988668363757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3942724d4b056081%3A0x7f32557d6a7f88b2!2sKesar%20Hotel!5e0!3m2!1sen!2sin!4v1656328943294!5m2!1sen!2sin" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-
             </p>
         </div>
     </section>
+    
+    <!--Footer Section  -->
+    <!-- <section>   
+        <div class="footer">
+            <ul>                
+                    <li><a href ="#">About us</a></li>
+                    <li><a href ="#">Contact us at: </a></li>
+            </ul>
+        </div>
+    </section> -->
 
       <!-- JavaScript -->
       <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

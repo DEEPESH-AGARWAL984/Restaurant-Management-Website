@@ -1,0 +1,70 @@
+
+        *{
+            font-style: italic;
+            font-weight: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            margin: 0px;
+            font-style:italic;
+            background-color: rgb(93, 231, 93);
+        }
+
+        .card{
+            font-size: 20px;
+            width:auto;
+            box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+            text-align: left;
+            background-color: rgb(255, 255, 255);
+            /* position: fixed; */
+        }
+
+        .card_info{
+            padding:10px;
+            font-weight: 500;
+        }
+
+        .images{
+            display: block;
+            padding: 10px;
+        }
+
+        header{
+            padding: 30px;
+            color:black;
+            font-size: 20px;
+            margin-top: 0px;
+        }
+        h2{
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 800px){
+            body{
+                text-align: center;
+            }
+        }
+
+        textarea{
+            resize: none;
+            border-radius: 10px;
+            font-size: 20px;
+            
+        }
+        .btn{
+            background-color: #ddd;
+            border:none;
+            border-radius: 5px;
+            color:black;
+            padding: 16px ;
+            text-align:center;
+            font-size: 16px;
+            transition: 0.5s;
+        }
+
+        .btn:hover{
+            background-color:#3e8e41;
+            color:white;
+        }

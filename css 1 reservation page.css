@@ -5,11 +5,19 @@
 }
 
 .card{
+    
     width:fit-content;
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
     text-align: center;
+    background-color: aliceblue;
     /* position: fixed; */
 }
+
+.card:hover{
+    box-shadow: 0 6px 8px rgba(0,0,0,0.8);
+    transition: 1s;
+}
+
 .card_info{
     padding:10px;
     font-weight: 500;
@@ -22,6 +30,7 @@
 body{
     margin: 0px;
     font-style:italic;
+    background-color: #7e9a9a;
 }
 
 header{
@@ -33,20 +42,20 @@ header{
 }
 
 .box{
-    border-style: groove;
-    background-color: rgb(242, 233, 233);
+    /* border-style:groove; */
     color:#333;
-    padding:14px 75px;
-    margin:20px;
+    padding:14px 60px;
+    margin:10px;
     border-radius: 10px;
     text-decoration: none;
     font-size: 20px;
-    text-align: left
+    text-align: left;
+    /* border-color: #333;
+    background-color: aliceblue; */
 }
 
-input[type = "text"],input[type = "email"],
-input[type = "number"],
-input[type = "password"],
+input[type = "text"],
+input[type = "email"],
 input[type = "date"],
 input[type = "tel"],
 select,textarea{
@@ -87,10 +96,11 @@ button[type = "reset"]:hover{
 
 h2{
     font-size: 30px;
-    padding: 25px;
+    padding-top: 15px;
 }
+
 form{
-    font-weight: 500;
+    font-weight: 200;
 }
 
 @media screen and (max-width: 800px){
@@ -101,4 +111,43 @@ form{
 
 textarea{
     resize: none;
+}
+
+
+
+/* To make the navbar fixed at the top  */
+.navbar{
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.666);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size:20px;
+    
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    margin-left:90px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #ddd;
+    color:black;
+}
+
+.main{
+    margin: 50px;
+}
+
+input[type = "text"],input[type = "email"],
+input[type = "date"],
+input[type = "tel"] ,select,textarea :hover{
+    box-shadow: 0px 4px 8px 0px;
+    transition: 1s;
 }
