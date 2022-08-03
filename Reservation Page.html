@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>RESTAURANT MANAGEMENT | RESERVATION PAGE</title>
+    
+    <!-- External css -->
+    <link rel="stylesheet" href="css 1 reservation page.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon\favicon-16x16.png">
+    <link rel="manifest" href="favicon\site.webmanifest">
+
+    <!-- Javascript for form validation -->
+    <script>
+
+        // JS code  for validation of the data entered by the user.
+        function validate(){
+            var name = document.getElementById("custname");
+            var contact = document.getElementById("custcontact"); 
+            var custemail = document.getElementById("email");
+            if(name.value.trim() == "" || contact.value.trim() == ""){
+                alert("No blank fields are allowed");
+                alert("Please fill all the details.")
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+
+        // To display the booking amount to be paid. 
+
+        function display(){
+            var x = document.getElementById("p1");
+            var y = document.getElementById("p2");
+            var z = document.getElementById("p3");
+            if(x.value){
+                alert("The total amount to be paid : 7000/- Rs");
+                return true;
+            }
+            else if(y.value){
+                alert("The total amount to be paid : 20,000/- Rs");
+                return true;
+            }
+            else if(z.value){
+                alert("The total amount to be paid : 15,000/- Rs");
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        // Confirmation box 
+
+        function confirmAction() {
+        let confirmAction = confirm("Are you sure ?");
+        if (confirmAction) {
+          alert("Your booking will be confirmed. \n We will update you soon!");
+        } 
+        else {
+          alert("Sorry to hear that!");
+        }
+      }
+
+    </script>
+</head>
+
+<body>
+   <!-- ====================Heading and logo====================== -->
+   <section class="header">
+    <a href="#"><img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2019/10/attachment_103367090-e1571110045215.jpg?auto=format&q=60&fit=max&w=930" alt="logo" id = "logo"></a>
+    <h1>
+        <u>Reservations</u>
+    </h1>
+</section>
+<!-- ===========================Navigation Bar===================== -->
+<section class = "navigation">
+<nav>
+    <a href="MainWebPage.html">Home</a>
+    <a href="North_Indian_Dishes.html">North_Indian</a>
+    <a href="South_Indian_Dishes.html">South_Indian</a>
+    <a href="Chinese cuisine.html">Chinese_Cuisine</a>
+    <!-- <a href="Reservation Page.html">Reservations</a> -->
+    <a href="Review & Feedback.html">Review & Feedback</a>
+</nav>
+</section>
+<hr>
+
+    <div class="main">
+        <section class = "about-restaurant">
+            <!-- Adding different pictures for reference only -->
+            <div class="images">
+                <div class = "card">
+                    <img src="https://unsplash.com/photos/Qd-lPUtupYA/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8YmFucXVldCUyMGhhbGx8ZW58MHx8fHwxNjU2Mzg3OTMz&force=true&w=1920" height = "300px" width="400px"
+                    alt="restaurant img">
+                    <div class="card_info">
+                       Banquet Hall 
+                    </div>
+                </div>
+            </div>
+    
+            <div class="images">
+                <div class = "card">
+                    <img src="https://unsplash.com/photos/WnmXzjtjRfw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTF8fGJhbnF1ZXQlMjBoYWxsfGVufDB8fHx8MTY1NjM4NzkzMw&force=true&w=1920" height = "300px" width="400px"
+                    alt="restaurant img">
+                    <div class="card_info">
+                       Birthday Party Themes 
+                    </div>
+                </div>
+            </div>
+    
+            <div class="images">
+                <div class = "card">
+                    <img src="https://unsplash.com/photos/poI7DelFiVA/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8cmVzdGF1cmFudHxlbnwwfHx8fDE2NTYzNjg3NTA&force=true&w=1920" height = "300px" width="400px"
+                    alt="restaurant img">
+                    <div class="card_info">
+                      Restro & Cafe 
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+    
+        <!-- Form for booking the hall  -->
+        <section>
+            <div class="form-style">
+                <div class = "box">
+                    <form action="#" onsubmit="return validate()" name = "submit-to-google-sheet">
+                        <p>
+                            FIND US AT SOME PLACE OR CALL US AT 05050515 - 122330   <br><br>
+                            WE OFFER FULL SERVICE CATERING FOR ANY EVENT, LARGE OR SMALL. WE UNDERSTAND YOUR NEEDS AND WE WILL CATER THE FOOD TO SATISFY THE BIGGEST CRITERIA OF THEM ALL, BOTH LOOK AND TASTE
+                        </p>
+                        <h2>RESERVE A TABLE, ASK FOR TODAY'S SPECIAL OR JUST SEND US A MESSAGE:</h2>
+    
+    
+                        <!-- Name and other details(phone number, email id, age, gender) -->
+                        Customer Name: <input type="text" placeholder="Enter Your Name:"  id = "custname" name="custname" required> </input><br><br>
+                        
+                        <!-- Contact Number  -->
+                        Customer Contact Number: <input type="tel" placeholder="Enter Your Contact Number: " id = "custcontact" name = "custcontact" required maxlength="10"> </input>
+                        <br><br>
+                        
+                        <!-- Email-Id -->
+                        Email-Id: <input type = "email" id = "email" name = "cust_email" placeholder="Enter Your Email-Id: "> </input>
+                        <br><br>
+                        
+                        <!-- Booking Date -->
+                        Booking Date: <input type="date" id="date" name = "booking-date" required></input>
+                        <br><br>
+                        
+                        <!-- Booking Type -->
+                        Booking Type:
+                        <select name="purpose" id="selectbox" onchange="display()" name = "purpose">
+                            <option value>-- Select purpose Of Booking --</option>
+                            <option value="1"  id = "p1" > Birthday Party </option>
+                            <option value="2"  id = "p2" > Marriage Reception </option>
+                            <option value="3"  id = "p3" > Restro & Cafe </option>
+                        </select>
+                        <br><br>
+                        <!-- Amount to be paid: 
+                        <textarea name="amount" id="amt" cols="5" rows="1" readonly></textarea> -->
+            
+                        <!-- Buttons (submit and reset) -->
+                        <center>
+                        <button type = "submit" onclick="confirmAction()">Submit</button>
+                        <button type = "reset">Reset</button>
+                    </center>
+                    </form>
+    
+            </div>
+        </section>
+        
+    </div>
+    
+</center>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5ExlbPubd_x08suqAVt5CcDchtXNE9ddR7CP66_FlrVwbt2Ps9bicKAEgf4YyXsBQfg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thank You For Subscribing!!";
+            setTimeout(function(){
+                msg.innerHTML= "";
+            }, 5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
