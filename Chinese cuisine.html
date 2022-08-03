@@ -5,100 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Management | Chinese cuisine</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
     
     <link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon\favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon\favicon-16x16.png">
     <link rel="manifest" href="favicon\site.webmanifest">
-    <style>
-        *{
-            font-style: italic;
-            font-weight: 20px;
-            font-family:Georgia, 'Times New Roman', Times, serif;
-        }
+   
+   <style>
+    *{
+        font-style: italic;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
+    }
 
-        body{
-            margin: 0px;
-            background-color:rgb(243, 243, 43);
-        }
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
-        h2{
-            font-size: 25px;
-            padding: 10px;
-        }
+    .card{
+        background-color: #fff;
+        width: 30%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius:20px;
+        margin: 10px;
+    }
 
-        nav{
-            width: 100%;
-        }
+    .card img{
+        width:  450px;
+        height: 250px;
+        object-fit: cover;
+        padding: 0;
+        margin: 0;
+    }
 
-        li{
-            list-style-type:none ;
-            display: inline-block;
-            padding:10px;
-            font-size: 20px;
-        
-        }
+    .card:hover{
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,0.6);
+        transition: 0.5s;
+    }
 
-        nav a{
-            display:inline-block;
-            text-decoration: none;
-            padding:14px 15px 20px;
-            font-size: 20px;
-            text-align: center;
-        }
+    @media screen and (max-width: 800px){
 
-        a:hover{
-        color:blueviolet;
-        }
-
-        /* For creating cards */
-
-        /* .card{
-            float: left;
-            min-width: min-content;
-            font-size: 15px;
-            width:20px;
-            display: flex;
-            flex-direction: column;
-            box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
-            text-align: left;
-            background-color: rgb(255, 255, 255);
-            border-radius: 5px;
-            position: fixed;
-        } */
-        /* .card{
-            display: flex;
-            flex-direction: row;
-        } */
-
-        /* .card_info{
-            padding:10px;
-            font-weight: 500;
-        } */
-
-        .images{
-            /* display: ; */
-            padding: 10px;
-            border-radius: 10px;
-            
-            /* position: center; */
-        }
-
-        .img{
-            height:300px;
-            width:650px;
-        }
-
-        header{
-            padding: 30px;
-            color:black;
-            font-size: 20px;
-            margin-top: 0px;
-        }
-
-        @media screen and (min-width: 800px){
         body{
             text-align: center;
         }
@@ -106,166 +59,516 @@
         h2,p{
             text-align: left;
         }
+        .card img{
+            width:  200px;
+            height: 200px;
+            object-fit: cover;
+            padding: 0;
+            margin: 0;
+        }
+
+       }
+
+    .more{
+        text-align:center ;
+    }
+     
+    button{
+        padding: 10px;   
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
     }
 
-        .card:hover{
-            box-shadow:0 6px 10px 0 rgba(0,0,0,0.6) ;
-            font-size: 18px;
-            transition: 0.5s ease;
-        }
+    button:hover{
+        background-color:#61b752 ;
+        color:#fff;
+        transition: 0.4s;
+    }
+     
+    button a:hover{
+        color:#fff;
+    }
+
+    .main{
+        margin-top:20px ;
+    }
+        
+    .slide{
+        margin-top: 20px;
+    }
+    
+    marquee{
+        font-size: x-large;
+    }
+
+    .header{
+        background-color: #fff;
+        height: 100%;
+        padding-top:8px ;
+    }
+
+    .header img{
+        width:170px;
+        float:left;
+        margin-left: 5%;
+        box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6);
+    }
+
+    .header h1{
+        text-align: right;
+        font-size: 35px;
+        padding: 20px;
+        color: #000;
+        word-spacing: 0.2em;
+        cursor:pointer;
+    }
+
+    .header .logo{
+        padding-left:8% ;
+    }
+
+    /* ==================Navigation Bar======================== */
+    nav{
+        margin-top:8% ;
+        padding: 10px;
+    }
+
+    nav a{
+        margin-left: 5%;
+        padding: 10px 0;
+        color: rgb(40, 39, 39);
+        font-size: 20px;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    a:hover{
+        color:#fff;
+        transition: 0.5s;
+    }
+
+    hr{
+        padding: 0;
+        margin: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .about-restaurant{
+        display: flex;
+        flex-direction: row;
+    }
+    
+      /* ==================== Table section containing menu ==================  */
+      table{
+        margin:20px ;
+        border: 2px solid #fff;
+        border-collapse:collapse;
+        width: 90%;
+    }
+
+    th{
+        font-size: 20px;
+        text-align: center;
+        margin: 10px;
+        border: 1px solid #dddddd;
+    }
+
+    td{
+        padding-left:5px ;
+        font-size: 20px;
+        text-align: left;
+        margin: 10px;
+        border: 1px solid #dddddd;
+    }
+
+    tr:nth-child(even){
+        background-color: #dddddd;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 50%;
+        padding: 5px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 35px;
+    }
+    .menu h3{
+        text-align: center;
+        font-size: 25px;
+    }
 
         </style>
     </head>
 <body>
-     <!-- Heading -->
-     <h1>
-        <u>
-            Introducing New Desserts
-        </u>
-    </h1>
 
-    <!-- Nav bar  -->
-    <section>
-        <div class="left">
-            <nav>
-                <ul>
-                    <li> <a href="Main Page.html">   Home   </a></li>
-                    <li> <a href="North_Indian_Dishes.html"> North Indian  </a></li>
-                    <li> <a href="South_Indian_Dishes.html"> South Indian </a></li>
-                    <li> <a href="Desserts.html"> Desserts    </a></li>
-                    <li> <a href="Reservation Page.html"> Reservations    </a></li>
-                    <li> <a href="Review & Feedback.html"> Feedback & Reviews  </a></li>
-                </ul>
-             </nav>
-            </div>
+    <!-- ====================Heading and logo====================== -->
+    <section class="header">
+        <a href="#"><img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2019/10/attachment_103367090-e1571110045215.jpg?auto=format&q=60&fit=max&w=930" alt="logo" id = "logo"></a>
+        <h1>
+            <u>Chinese Cuisine</u>
+        </h1>
     </section>
+
     
-    
+    <!-- ===========================Navigation Bar===================== -->
+    <section class = "navigation">
+        <nav>
+            <a href="MainWebPage.html">Home</a>
+            <a href="North_Indian_Dishes.html">North_Indian</a>
+            <a href="South_Indian_Dishes.html">South_Indian</a>
+            <a href="Reservation Page.html">Reservations</a>
+            <a href="Review & Feedback.html">Review & Feedback</a>
+        </nav>
+    </section>
+    <hr>
+    <div class="slide">
+        <marquee behavior="" direction="left"><u>Introducing new varieties of Chinese Dishes</u></marquee>
+    </div>
 
     <!-- For introducing new varieties of desserts -->
-    <section>
-    
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <img src="./Restaurant Management _ Chinese cuisine_files/manchurian_620x330_81525941731.jpg" height="200px" width="400px" alt="Veg Dry Manchurian">
-                        <div class="card-body">
-                          <h5 class="card-title">Veg Dry Manchurian</h5>
-                          <p class="card-text"> "These amazingly delicious vegetarian Chinese balls loaded with veggies will perfectly cater to all your snack cravings and leave you wanting for more.
-                            This quick and easy dish made with cabbage, carrot, spring onion, capsicum, ginger, garlic, corn flour, maida, et al can be enjoyed with fried rice and noodles."</p>
-                        </div>
-                      </div>
-                </div>
-    
-        <div class="col">
-            <div class="card">
-            <img src="./Restaurant Management _ Chinese cuisine_files/honey-chili-potato_620x330_61525941818.jpg" height="200px" width="400px" alt="Honey Chilli Potato">
-            <div class="card-body">
-                <h5 class="card-title">Honey Chili Potato</h5>
-                <p class="card-text"> 
-                    "Honey chili potato can be added to any party food menu as veg Chinese starter and is a sure-shot paradise for potato lovers. <br>
-                    Made with fried potatoes, honey and chili sauce,
-                    this snack is crunchy, flavourful and irresistible."
-                </p>
-            </div>
-        </div>
-    </div>
 
 
-    
-        <div class="col">
-            <div class="card">
-            <img src="./Restaurant Management _ Chinese cuisine_files/veg-manchow-soup_620x350_71525942064.jpg" height="200px" width="400px" alt="Hakka noodles">
-            <div class="card-body">
-                <h5 class="card-title">Manchow Soup</h5>
-                <p class="card-text">
-                    "An authentic Chinese fare without an ever-so delightful soup? Cant happen. 
-                    Wont happen. Savour the hot and spicy flavours of this Chinese vegetable manchow soup that wouldn't take much of your time."<br>
-                </p>
-            </div>
-        </div>
-    </div>
-
-            <div class="col">
-                <div class="card">
-                    <img src="./Restaurant Management _ Chinese cuisine_files/noodles-salad_620x350_61516262792.jpg" height="200px" width="400px" alt="Veg Hakka Noodles">
-                    <div class="card-body">
-                        <h5 class="card-title">Veg Hakka Noodles</h5>
-                        <p class="card-text">
-                            "You can have it for a light brunch or a party. 
-                            The recipe is a hit with children too!<br><br>
-                            Toss up your favourite veggies like capsicum, carrot, spring onions and cabbage in the eclectic mix of sauces and you have a winner! "<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-    
-  
-    
-    <div class="col">
+<div class="main">
+    <section class = "about-restaurant">
         <div class="card">
-            <img src="./Restaurant Management _ Chinese cuisine_files/spring-roll_625x350_81446202259.jpg" height="200px" width="400px" alt="Spring Rolls">
-            <div class="card-body">
-                <h5 class="card-title">East-West Spring Rolls</h5>
-                <p class="card-text">
-                </p><p>
+            <img src="https://i.ndtvimg.com/i/2018-05/manchurian_620x330_81525941731.jpg" width="100%"
+            alt="Aloo Gobi">
+
+            <h2> <u> Veg Dry Manchurian</u></h2>
+            <p> 
+                "These amazingly delicious vegetarian Chinese balls loaded with
+                veggies will perfectly cater to all your snack cravings and leave you wanting for more.
+                This quick and easy dish made with cabbage, carrot, spring onion,
+                capsicum, ginger, garlic, corn flour, maida, can be enjoyed with fried rice and noodles."
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://i.ndtvimg.com/i/2015-10/spring-roll_625x350_81446202259.jpg" width="100%" 
+            alt="East-west Spring Rolls">
+
+            <h2> <u> East-West Spring Rolls</u></h2>
+                <p>
                     "Infused with a range of flavours, 
                     crisp vegetarian spring rolls are stuffed with cheese,bell peppers and sundried tomatoes.
                     It is served with a basil dip made with olives, parmesan, mayonnaise and a hint of garlic."<br>
                 </p>
+        </div>
+
+        <div class="card">
+            <img srC="Restaurant Management _ Chinese cuisine_files\noodles-salad_620x350_61516262792.jpg"  width = "100%"
+                alt="Veg Hakka Noodles">
+                <h2><u>Veg Hakka Noodles</u></h2>
+                <p>
+                    "You can have it for a light brunch or a party. 
+                    The recipe is a hit with children too!
+                    Toss up your favourite veggies like capsicum, carrot, spring onions and cabbage in the eclectic mix of sauces and you have a winner! "<br>
+                </p>
+        </div>
+
+        </section>
+
+        <section class = "about-restaurant">
+            <div class="card">
+                <img src="https://i.ndtvimg.com/i/2018-05/veg-manchow-soup_620x350_71525942064.jpg" width="100%"  
+                    alt="Manchow Soup">
+
+                    <h2><u>Manchow Soup</u></h2>
+                    <p>
+                        "An authentic Chinese fare without an ever-so delightful soup? Cant happen. 
+                        Wont happen. Savour the hot and spicy flavours of this Chinese vegetable manchow soup that wouldn't take much of your time."<br>
+                    </p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.ndtvimg.com/i/2018-05/honey-chili-potato_620x330_61525941818.jpg" width="100%" height="280px"  
+                alt="Honey Chili Potato">
+
+                <h2><u>Honey Chili Potato</u></h2>
+                <p> 
+                    "Honey chili potato can be added to any party food menu as veg Chinese starter and is a sure-shot paradise for potato lovers.
+                    Made with fried potatoes, honey and chili sauce,
+                    this snack is crunchy, flavourful and irresistible."
+                </p> 
+            </div>
+
+            <div class="card">
+                <img src="https://c.ndtvimg.com/2018-10/rn3lad_crunchy-dumpling_625x300_19_October_18.JPG" width="100%" height="280px"  
+                alt="Paneer_Lababdar">
+                <h2> <u> Crunchy Iceberg Dumpling</u></h2>
+                <p>
+                    Pamper your taste buds with this phenomenal iceberg  dumpling recipe, packing the fresh and juicy goodness of asparagus, 
+                    crunchy water chestnut and corn kernels these dumplings are sure to leave an everlasting impact.<br>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <center>
+        <h2> <u> Menu Section</u></h2>
+    </center>
+    <!-- Complete Menu Section -->
+    <div class="row">
+        <div class="column">
+            <div class="menu">
+                <h3><u> Main Course</u></h3>
+                <table>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Dishes</th>
+                        <th>Prices</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Brocolli Babycorn</td>
+                        <td>150 rs</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Chilli Tikka(Gravy)</td>
+                        <td>150 rs</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Tikka in hot garlic sauce</td>
+                        <td>150 rs</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Chilli Paneer</td>
+                        <td>130 rs</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Tikka Babycorn</td>
+                        <td>120 rs</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Veg Manchurian(Dry)</td>
+                        <td>120 rs</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Veg Manchurian(Gravy)</td>
+                        <td>150 rs</td>
+                    </tr>
+                   
+                </table>
             </div>
         </div>
-    </div>
-</div>
-</div>
-    </section>
-
-
-    <section>
-        <div class="more">
-            <button><a href="http://127.0.0.1:5500/test_cards.html#">More &gt;&gt;</a></button>
+            <!-- =================Section - 2/ Column - 2==================== -->
+            <div class="column">
+                <div class = "menu">
+                    <h3> <u> Veg Noodles</u></h3>
+                <table>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Dishes</th>
+                        <th>Prices</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Veg. Pan Fried Noodles</td>
+                        <td>120 rs</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Soya Chaap Noodles</td>
+                        <td>120 rs</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Veg Garlic Singapuri Noodles</td>
+                        <td>120 rs</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Butter Noodles</td>
+                        <td>110 rs</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Veg Hakka Noodles</td>
+                        <td>110 rs</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Veg Singapuri Noodles</td>
+                        <td>110 rs</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Veg Noodles</td>
+                        <td>100 rs</td>
+                    </tr>
+                </table>
+            </div>
+          </div>
         </div>
-         
-    </section> 
+        
+        <div class="row">
+            <div class="column">
+                <div class="menu">
+                    <h3> <u> Veg Rice</u></h3>
+                    <table>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Dishes</th>
+                            <th>Prices</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Spl. Oriental Fried Rice</td>
+                            <td>120 rs</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Veg Hakka Rice</td>
+                            <td>110 rs</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Veg Singapuri Rice</td>
+                            <td>110 rs</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Veg Chilli Garlic Rice</td>
+                            <td>100 rs</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Veg Fried Rice</td>
+                            <td>100 rs</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Veg schezwan Fried Rice</td>
+                            <td>120 rs</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>Veg Fried Rice with Manchurian(Dry)  </td>
+                            <td>120 rs</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+                <!-- =================Section - 2/ Column - 2==================== -->
+                <div class="column">
+                    <div class = "menu">
+                        <h3> <u> Veg Snacks</u></h3>
+                    <table>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Dishes</th>
+                            <th>Prices</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Chilli Mushroom</td>
+                            <td>170 rs</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Mix Veg Salt & Pepper</td>
+                            <td>160 rs</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Chilli Nuggets</td>
+                            <td>160 rs</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Gobhi Manchurian(Dry)</td>
+                            <td>160 rs</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Chilli Gobhi</td>
+                            <td>150 rs</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Veg Triangle</td>
+                            <td>100 rs</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>Paneer Triangle</td>
+                            <td>100 rs</td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+            </div>
 
-
-<!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-</body></html>
+            <div class="row">
+                <div class="column">
+                    <div class="menu">
+                        <h3><u>Veg Rolls</u></h3>
+                        <table>
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Dishes</th>
+                                <th>Prices</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Veg Spring Roll</td>
+                                <td>70 rs</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Maggi Spring Rolls</td>
+                                <td>90 rs</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>East-West Spring Rolls</td>
+                                <td>100 rs</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                    <!-- =================Section - 2/ Column - 2 Crispy Potato's==================== -->
+                    <div class="column">
+                        <div class = "menu">
+                            <h3> <u> Crispy Potato's</u></h3>
+                        <table>
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Dishes</th>
+                                <th>Prices</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Honey Chilli Potato</td>
+                                <td>150 rs</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Chilli Garlic Crispy Potato</td>
+                                <td>130 rs</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Shredde Potato</td>
+                                <td>110 rs</td>
+                            </tr>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+</body>
+</html>

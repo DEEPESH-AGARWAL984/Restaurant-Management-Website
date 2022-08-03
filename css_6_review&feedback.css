@@ -1,70 +1,151 @@
 
-        *{
-            font-style: italic;
-            font-weight: 20px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
+    *{
+        box-sizing: border-box;
+        font-style: italic;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
+  /* =================== Heading and logo ====================== */
+    .header{
+        background-color: #fff;
+        height: 100%;
+        padding-top:8px ;
+    }
+
+    .header img{
+        width:170px;
+        float:left;
+        margin-left: 5%;
+        box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6);
+    }
+
+    .header h1{
+        text-align: right;
+        font-size: 35px;
+        padding: 20px;
+        color: #000;
+        word-spacing: 0.2em;
+        cursor:pointer;
+    }
+
+    button:hover{
+        color:black;
+        background-color: #ddd;
+        transition: 0.5s;
+    }
+
+    .header .logo{
+        padding-left:8% ;
+    }
+
+    /* ==================Navigation Bar======================== */
+    nav{
+        margin-top:8% ;
+        padding: 10px;
+    }
+
+    nav a{
+        margin-left: 5%;
+        padding: 10px 0;
+        color: rgb(40, 39, 39);
+        font-size: 20px;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    a:hover{
+        color:#fff;
+        transition: 0.5s;
+    }
+
+    hr{
+        padding: 0;
+        margin: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    /* =================For Creating cards ==================== */
+    .card{
+        font-size: 20px;
+        width:auto;
+        box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+        text-align: left;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .card_info{
+        padding:10px;
+        font-weight: 500;
+    }
+
+    .images{
+        display: block;
+        padding: 10px;
+    }
+
+    textarea{
+        resize: none;
+        border-radius: 10px;
+        font-size: 20px;    
+    }
+
+    .btn{
+        background-color: #ddd;
+        border:none;
+        border-radius: 5px;
+        color:black;
+        padding: 16px ;
+        text-align:center;
+        font-size: 16px;
+        transition: 0.5s;
+    }
+
+    .btn:hover{
+        background-color:#3e8e41;
+        color:white;
+    }
+
+    @media screen and (max-width: 800px){
         body{
-            margin: 0px;
-            font-style:italic;
-            background-color: rgb(93, 231, 93);
+            text-align: center;
         }
-
-        .card{
-            font-size: 20px;
-            width:auto;
-            box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+        h2,p{
             text-align: left;
-            background-color: rgb(255, 255, 255);
-            /* position: fixed; */
         }
-
-        .card_info{
-            padding:10px;
-            font-weight: 500;
-        }
-
-        .images{
-            display: block;
-            padding: 10px;
-        }
-
-        header{
-            padding: 30px;
-            color:black;
-            font-size: 20px;
-            margin-top: 0px;
-        }
-        h2{
-            font-size: 30px;
-            padding: 20px;
-        }
-
-        @media screen and (max-width: 800px){
-            body{
-                text-align: center;
-            }
-        }
-
-        textarea{
-            resize: none;
-            border-radius: 10px;
-            font-size: 20px;
-            
-        }
-        .btn{
-            background-color: #ddd;
-            border:none;
-            border-radius: 5px;
-            color:black;
-            padding: 16px ;
-            text-align:center;
-            font-size: 16px;
-            transition: 0.5s;
-        }
-
-        .btn:hover{
-            background-color:#3e8e41;
-            color:white;
-        }
+    }
+         
+    button{
+        padding: 10px;   
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+    }
+    
+    button:hover{
+        background-color:#61b752 ;
+        color:#fff;
+        transition: 0.4s;
+    }
+         
+    button a:hover{
+        color:#fff;
+    }
+    
+    h2{
+        padding: none;
+        text-align: left;
+        font-size: 20px;
+    }
+    .text h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management | Home Page</title>
+
+      <!---=========== Favicon==================-->
+      <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+      <link rel="manifest" href="Favicon/site.webmanifest">
+
+    <style>
+
+    *{
+        font-style: italic;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* ================= For creating the cards =========================  */
+    .card{
+        background-color: #fff;
+        width: 30%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius:20px;
+        margin: 10px;
+    }
+
+    .card img{
+        width:  450px;
+        height: 250px;
+        object-fit: cover;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card:hover{
+        cursor:pointer;
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,0.6);
+        transition: 0.5s;
+    }
+
+    @media screen and (max-width: 800px){
+
+        body{
+            text-align: center;
+        }
+
+        h2,p{
+            text-align: left;
+        }
+        .card img{
+            width:  200px;
+            height: 200px;
+            object-fit: cover;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .main{
+        margin-top:20px ;
+    }
+        
+    .slide{
+        margin-top: 60px;
+    }
+    
+    marquee{
+        font-size: xx-large;
+    }
+
+    /* ============== Heading and Logo ===================== */
+    .header{
+        background-color: #fff;
+        height: 100%;
+        padding-top:8px ;
+    }
+
+    .header img{
+        width:170px;
+        float:left;
+        margin-left: 5%;
+        box-shadow: 0 8px 10px 0 rgba(0,0,0,0.6);
+    }
+
+    .header h1{
+        text-align: right;
+        font-size: 35px;
+        padding: 20px;
+        color: #000;
+        word-spacing: 0.2em;
+        cursor:pointer;
+    }
+
+    .header .logo{
+        padding-left:8% ;
+    }
+
+    /* ==================Navigation Bar======================== */
+    nav{
+        margin-top:8% ;
+        padding: 10px;
+    }
+
+    nav a{
+        margin-left: 5%;
+        padding: 10px 0;
+        color: rgb(40, 39, 39);
+        font-size: 20px;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    a:hover{
+        color:#fff;
+        transition: 0.5s;
+    }
+
+    hr{
+        padding: 0;
+        margin: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .about-restaurant{
+        display: flex;
+        flex-direction: row;
+    }
+
+   
+    </style>
+</head>
+<body>
+    
+    <!-- ====================Heading and logo====================== -->
+    <section class="header">
+            <a href="#"><img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2019/10/attachment_103367090-e1571110045215.jpg?auto=format&q=60&fit=max&w=930" alt="logo" id = "logo"></a>
+            <h1>
+                <u>Restaurant Management</u>
+            </h1>
+    </section>
+    <!-- ===========================Navigation Bar===================== -->
+    <section class = "navigation">
+        <nav>
+            <a href="MainWebPage.html">Home</a>
+            <a href="North_Indian_Dishes.html">North_Indian</a>
+            <a href="South_Indian_Dishes.html">South_Indian</a>
+            <a href="Chinese cuisine.html">Chinese_Cuisine</a>
+            <a href="Reservation Page.html">Reservations</a>
+            <a href="Review & Feedback.html">Review & Feedback</a>
+        </nav>
+    </section>
+    <hr>
+
+    <section class = "about-restaurant">
+        <div class="card">
+            <img src="https://unsplash.com/photos/vsnAIYA9bms/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU4NDY0NjQ4&force=true&w=1920"  width="100%"  alt="North_Indian_Cuisine">
+            <h2>
+                <u> North Indian Cuisine </u>
+            </h2>
+            <p>
+                North Indian curries usually have thick, moderately spicy and creamy gravies.
+                The use of dried fruits and nuts is fairly common even in everyday foods.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://unsplash.com/photos/gFB1IPmH6RE/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU4NDY0NDA2&force=true&w=640"  width = "100%" alt="South_Indian_Cuisine">
+            <h2>
+                <u> South Indian Cusisine </u>
+            </h2>
+            <p>
+                South Indian cuisine is perhaps the hottest of all Indian food. 
+                Meals are centered around rice or rice-based dishes. Rice is combined with Sambaar
+                and rasam.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://unsplash.com/photos/GZe_M6TUJ_k/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8Y2hpbmVzZSUyMGZvb2R8ZW58MHx8fHwxNjU4NDY0NTk4&force=true&w=640" width = "100%"
+            alt="Chinese_Cuisine">
+            <h2>
+                <u> Chinese Cuisine </u>
+            </h2>
+            <p>
+                Chinese cuisine is an important part of Chinese culture and includes cuisines originating from China.
+                Chinese cuisine has influenced many other cuisines in Asia. 
+            </p>
+        </div>
+    </section>
+
+    <!-- ==========================Location and directions to reach to the restaurant========================= -->
+
+        <div class="card">
+            <h2>
+                <u>
+                    Location:
+                </u>
+            </h2>
+            <p>
+                Waves 2.0 Restaurant,<br>
+                Jodhpur Rd, opp. Krishi Mandi, Housing Board, Pali, Rajasthan 306401
+            </p>
+        </div>
+        <div id="location">
+            <div class="card">
+                <h2>
+                    <u>
+                        Directions(On the map):
+                    </u>
+                </h2>
+                <p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.160198504477!2d73.29436221485834!3d25.798288483620155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394273041aeca92b%3A0x3b18035910dc87a7!2sWaves%202.0%20Restaurant!5e0!3m2!1sen!2sin!4v1658465527628!5m2!1sen!2sin" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>
